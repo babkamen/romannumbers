@@ -1,8 +1,9 @@
-/* package whatever; // don't place package name! */
 
 import java.util.*;
 
-/* Name of the class has to be "Main" only if the class is public. */
+/**
+ * Converts arabic numberals to roman
+ */
 public class ArabicToRomanNumberConverter {
     private static int maxValue;
     private static Map<Integer, String> labels = new LinkedHashMap<Integer, String>();
@@ -30,8 +31,12 @@ public class ArabicToRomanNumberConverter {
 
     }
 
-
-    public static String convert(int inputNum) throws Exception {
+    /**
+     * Converts Arabic numberals to Roman
+     * @param inputNum - number. Must be  0<inputNumber<=3999
+     * @return converted number in String representaion
+     */
+    public static String convert(int inputNum) {
         int num=inputNum;
         String s="";
         List<Integer> b = Arrays.asList(keyArr);
